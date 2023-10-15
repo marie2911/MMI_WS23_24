@@ -51,15 +51,15 @@ getGreetingDependOnTime = function (myDate) {
     if (dateBegin.getTime() < dateCurrent.getTime()) { //"guten morgen"
         if (dateCurrent.getTime() >= dateEnd.getTime()) {
 
-            return "Gute Nacht"
+            return "Guten Morgen"
         }
         else {
-            return "Guten Tag"
+            return "Guten Abend"
         }
     } else {
         newVariable = dateCurrent.getTime()
         console.log("For debugging: ") + dateBegin.getTime() + " " + dateCurrent.getTime() + " " + dateEnd.getTime()
-        return "Gute Nacht" // heute nacht bin ich hier reingelaufen
+        return "Guten Morgen"
     }
 }
 
