@@ -40,6 +40,7 @@ function updateDisplay() {
     }
 }
 
+
 // this should be a very helpful comment
 getGreetingDependOnTime = function (myDate) {
     let timeBegin = '06:00';
@@ -63,6 +64,8 @@ getGreetingDependOnTime = function (myDate) {
     }
 }
 
+
+
 function increaseTemperature() {
     temperature--;
     updateDisplay();
@@ -74,10 +77,20 @@ function decreaseTemperature() {
 }
 
 function levelChange() {
-    if (level < 3)
-        level++;
-    else
-        level = 0
+    switch (level) {
+        case 0:
+            level = 1;
+            break;
+        case 1:
+            level += 1;
+            break;
+        case 2:
+            level++;
+            break;
+        default:
+            level -= 3;
+            break;
+    }
     updateDisplay();
 }
 

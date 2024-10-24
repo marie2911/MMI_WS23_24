@@ -11,7 +11,7 @@ function sum(arr) {
 
 describe('#sum()', function () {
 
-    //  logic before each test is run
+    //  if needed logic before each test run
     beforeEach(function () {
 
     })
